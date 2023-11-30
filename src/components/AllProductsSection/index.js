@@ -92,7 +92,7 @@ class AllProductsSection extends Component {
       childName,
       activeOptionId
     } = this.state
-    let apiUrl = 'http://localhost:8000/details?';
+    let apiUrl = 'https://product-service-dog7.onrender.com/details?';
 
     if (childName) {
       if (activeCategoryName === 'Price') {

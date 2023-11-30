@@ -46,7 +46,7 @@ class ProductItemDetails extends Component {
     this.setState({
       apiStatus: apiStatusConstants.inProgress,
     })
-    const apiUrl = `http://localhost:8000/details/${id}`
+    const apiUrl = `https://product-service-dog7.onrender.com/details/${id}`
     const response = await fetch(apiUrl)
     if (response.ok) {
       const fetchedData = await response.json()
